@@ -1,0 +1,125 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:"Open Sans", Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: $weight-normal;
+    line-height: 1.4em;
+    background: white;
+    color: $black;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+
+.bg-primary{
+    background: $primary !important;
+}
+
+.text-white{ 
+    color: $white !important;
+}
+.text-black{
+    color: $black !important;
+}
+.text-primary{ 
+    color: $primary !important;
+}
+.text-orange {
+    color: $orange !important;
+}
+.text-grey {
+    color: $grey !important;
+}
+.text-semibold{
+    font-weight: $weight-semibold;
+}
+.text-bold{
+    font-weight: $weight-bold;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.text-underline-none {
+    text-decoration: none;
+}
+
+.is-size-1{
+    font-size: $size-1;
+}
+.is-size-2{
+    font-size: $size-2;
+}
+.is-size-3{
+    font-size: $size-3;
+}
+.is-size-4{
+    font-size: $size-4;
+}
+.is-size-5{
+    font-size: $size-5;
+}
+.is-size-6{
+    font-size: $size-6;
+}
+.is-size-7{
+    font-size: $size-7;
+}
+
+.is-fullheight{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.is-rounded-add-icon, .is-rounded-remove-icon{
+    &:before{
+        content: '';
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: $white;
+        border: 1px solid $white;
+        border-radius: 100%;              
+    }
+    &:after{
+        content: '';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 1.8rem;
+        font-weight: 300;
+        color:$primary;                
+        width: 100%;
+        height: calc(100% - 2px);
+        height: 38px;
+        position: absolute;
+        top:0;
+        left: 0;
+    }   
+}
+
+.is-rounded-add-icon{
+    &:after{
+        content: '+';
+        font-size: 2rem;
+    }
+}
+
+.is-rounded-remove-icon{
+    &:after{
+        content: 'x';
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    // Allow javascript files to be compiled.
+    "allowJs": true,
+    // Allow default imports from modules without default export
+    "allowSyntheticDefaultImports": true,
+    // Specify JSX code generation
+    "jsx": "react",
+    // Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015' or 'esnext'.
+    "module": "esnext",
+    // Search under node_modules for non-relative imports.
+    "moduleResolution": "node",
+    // Warn on expressions and declarations with an implied 'any' type.
+    "noImplicitAny": true,
+    // path to output directory
+    "outDir": "./build/",
+    // enable strict null checks as a best practice
+    "strictNullChecks": true,
+    // Target latest version of ECMAScript.
+    "target": "esnext"
+  },
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

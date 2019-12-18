@@ -1,0 +1,62 @@
+.list-group-add-member{
+  position: relative;
+  height: 100%;
+  
+  .media{
+    cursor: pointer;    
+  }
+
+  .add-member-autosuggestion{
+    width: 100%;
+    min-height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(237,237,237,1);
+    background: $white;
+    z-index: 1;
+    
+    .react-autosuggest__container{
+      input{
+        width: calc(100% - 2rem);
+        height: 30px;      
+        display: block;
+        margin: 0 auto;
+        margin-top: 1rem;
+        border: none;
+        outline: none;
+        box-shadow: none !important;
+        border-bottom: 1px solid $primary;
+        font-size: 1.25rem;
+      }
+      ul{
+        list-style: none;
+        padding: 1rem 0 0;
+      }
+    }
+
+    .result-member{
+      background-color: white;
+      padding: 0.5rem 1rem;
+
+      .media{
+        align-items: center;
+        .media-left{
+          width: 3rem;
+        }
+      }
+    }
+
+    .result-notfound{
+      max-width: 215px;
+      margin: auto;
+      text-align: center;
+      padding: 1.5rem 0.5rem;
+
+      small{
+        display: block;
+        line-height: 1;
+      }
+    }
+  }
+}
