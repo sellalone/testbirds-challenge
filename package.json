@@ -1,4 +1,5 @@
 {
+  "homepage": "http://sellalone.github.io/testbirds-challenge",
   "name": "testbirds-challenge",
   "version": "1.0.0",
   "description": "This is a Coding challenge from testbirds.de",
@@ -10,7 +11,9 @@
     "dev": "./config/scripts/dev.sh",
     "build": "./config/scripts/build.sh",
     "lint": "tslint 'src/**/*.ts?(x)'",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
@@ -35,6 +38,7 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "2.1.0",
     "file-loader": "^4.1.0",
+    "gh-pages": "^2.2.0",
     "hard-source-webpack-plugin": "^0.13.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
