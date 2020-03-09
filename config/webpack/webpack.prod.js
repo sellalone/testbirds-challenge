@@ -12,9 +12,10 @@ module.exports = merge(common, {
 
   plugins: [
     new MiniCssExtractPlugin({ filename: 'assets/css/[name].min.css' }),
-    new HtmlWebpackPlugin({      
+    new HtmlWebpackPlugin({
+      inject: false,
       template: paths.templatePath,
-      filename: './index.html',      
+      filename: './index.html',
     }),
     new CleanWebpackPlugin(),
   ]
