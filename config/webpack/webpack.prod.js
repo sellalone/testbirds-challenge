@@ -8,12 +8,15 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = merge(common, {
   mode: 'production',
 
+  output: {
+    publicPath: "/testbirds-challenge/",
+  },
+
   devtool: 'source-map',
 
   plugins: [
     new MiniCssExtractPlugin({ filename: 'assets/css/[name].min.css' }),
-    new HtmlWebpackPlugin({
-      inject: false,
+    new HtmlWebpackPlugin({      
       template: paths.templatePath,
       filename: './index.html',
     }),

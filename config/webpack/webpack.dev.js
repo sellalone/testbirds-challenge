@@ -13,8 +13,7 @@ module.exports = env => merge(common, {
   plugins: [
     new HardSourceWebpackPlugin(),
     new HotModuleReplacementPlugin(),
-    new HtmlWebpackPlugin({
-      inject: false,
+    new HtmlWebpackPlugin({    
       template: paths.templatePath,
       filename: './index.html',
     })
