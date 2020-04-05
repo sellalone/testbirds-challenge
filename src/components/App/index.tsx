@@ -11,11 +11,14 @@ import { PageNotFound } from '../PageNotFound';
 import { Team } from '../Team';
 
 const App: SFC = () => {
+  console.log('====================================');
+  console.log(process.env.PUBLIC_URL);
+  console.log('====================================');
   return (
     <Provider {...stores}>
       <Container>
         <Header />
-        <Router basename={`${process.env.PUBLIC_URL}/`}>
+        <Router basename={`${process.env.PUBLIC_URL}`}>
           <Switch>
             <Route
               path="/"
