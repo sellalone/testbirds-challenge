@@ -15,7 +15,7 @@ const App: SFC = () => {
     <Provider {...stores}>
       <Container>
         <Header />
-        <Router>
+        <Router basename={`${process.env.PUBLIC_URL}/`}>
           <Switch>
             <Route
               path="/"
