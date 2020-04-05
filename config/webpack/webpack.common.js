@@ -6,6 +6,7 @@ const { DefinePlugin } = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const NODE_ENV = process.env.NODE_ENV || '';
+const PUBLIC_URL = NODE_ENV !== 'development'? '/testbirds-challenge':'';
 
 const webpackConfig = {
   // webpack will take the files from ./src/index as entry point
@@ -30,6 +31,7 @@ const webpackConfig = {
       'process.env': {
         NODE_ENV: JSON.stringify(NODE_ENV),
         BUILD_DATE: JSON.stringify(new Date().toISOString()),
+        PUBLIC_URL: JSON.stringify(PUBLIC_URL),
       },
     })
   ]

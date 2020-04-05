@@ -10,17 +10,14 @@ import { Header } from '../Header';
 import { PageNotFound } from '../PageNotFound';
 import { Team } from '../Team';
 
+import { PUBLIC_URL } from '../../utils/constants';
+
 const App: SFC = () => {
-  console.log('====================================');
-  console.log(process);
-  console.log(process.env);
-  console.log(process.env.PUBLIC_URL);
-  console.log('====================================');
   return (
     <Provider {...stores}>
       <Container>
         <Header />
-        <Router basename={'/'}>
+        <Router basename={PUBLIC_URL}>
           <Switch>
             <Route
               path="/"
@@ -30,7 +27,7 @@ const App: SFC = () => {
               }}
             />
 
-            <Route component={() => <PageNotFound />} />
+            <Route path="*" component={() => <PageNotFound />} />
           </Switch>
         </Router>
       </Container>
