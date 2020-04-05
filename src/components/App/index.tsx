@@ -12,6 +12,8 @@ import { Team } from '../Team';
 
 const App: SFC = () => {
   console.log('====================================');
+  console.log(process);
+  console.log(process.env);
   console.log(process.env.PUBLIC_URL);
   console.log('====================================');
   return (
