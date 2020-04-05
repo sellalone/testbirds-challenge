@@ -18,7 +18,7 @@ const App: SFC = () => {
     <Provider {...stores}>
       <Container>
         <Header />
-        <Router basename={`${process.env.PUBLIC_URL}`}>
+        <Router basename={`${process.env.PUBLIC_URL}/testbirds-challenge/`}>
           <Switch>
             <Route
               path="/"
