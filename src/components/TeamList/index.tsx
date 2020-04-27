@@ -65,7 +65,7 @@ class TeamList extends Component<IProps, IState> {
     const { handleMemberClick, handleShowMoreClick } = this;
     if (isLoading) {
       return (
-        <div className="d-flex justify-content-center">
+        <div className="d-flex m-5 justify-content-center">
           <Spinner style={{ width: '3rem', height: '3rem' }} color="success" />;
         </div>
       );
@@ -94,14 +94,14 @@ class TeamList extends Component<IProps, IState> {
                   <img
                     className="rounded-circle"
                     src={require(`../../assets/images/${item.picture}`)}
-                    alt={item.username}
+                    alt={item.name}
                   />
                   <div className="is-rounded-remove-icon" />
                 </Media>
                 <Media body={true}>
                   <h4 className="text-black m-0">{item.role}</h4>
                   <h3 className="is-size-4 text-black text-bold m-0">
-                    {item.username}
+                    {item.name}
                   </h3>
                 </Media>
               </Media>

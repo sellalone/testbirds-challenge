@@ -1,11 +1,15 @@
 import axios from 'axios';
 import { action, observable } from 'mobx';
 
+const usersRequestUrl =
+  'https://my-json-server.typicode.com/sellalone/testbirds-challenge/db';
+// https://api.myjson.com/bins/126nwk
+
 export interface IMember {
   id: number;
   picture: string;
   role: string;
-  username: string;
+  name: string;
 }
 
 class TeamStore {
@@ -19,9 +23,9 @@ class TeamStore {
     this.isLoading = true;
     this.error = null;
     try {
-      const result = await axios.get('https://api.myjson.com/bins/126nwk');
-      this.teamList = result.data;
-      this.teamMembers = result.data.slice(1, 8);
+      const result = await axios.get(usersRequestUrl);
+      this.teamList = result.data.users;
+      this.teamMembers = result.data.users.slice(1, 8);
       this.isLoading = false;
     } catch (error) {
       this.error = error;

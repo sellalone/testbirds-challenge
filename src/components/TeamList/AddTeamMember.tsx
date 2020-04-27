@@ -37,7 +37,7 @@ class AddTeamMember extends Component<IProps, IState> {
   }
 
   public onClickGetSuggestionValue = (member: IMember) => {
-    return `${member.username}`;
+    return `${member.name}`;
   };
 
   public getSuggestions(value: string) {
@@ -49,7 +49,7 @@ class AddTeamMember extends Component<IProps, IState> {
 
     return list.filter(
       member =>
-        member.username.toLowerCase().includes(inputValue) &&
+        member.name.toLowerCase().includes(inputValue) &&
         !members.find(({ id }) => member.id === id)
     );
   }
@@ -97,11 +97,11 @@ class AddTeamMember extends Component<IProps, IState> {
           <img
             className="rounded-circle"
             src={require(`../../assets/images/${member.picture}`)}
-            alt={member.username}
+            alt={member.name}
           />
         </Media>
         <Media body={true}>
-          <p className="is-size-4 text-black m-0">{member.username}</p>
+          <p className="is-size-4 text-black m-0">{member.name}</p>
         </Media>
       </Media>
     </div>
