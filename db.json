@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "Max Mustermann",
+      "role": "Admin",
+      "picture": "avatar-default.png",
+      "id": 1
+    },
+    {
+      "name": "Erika Mustermann",
+      "role": "Internal",
+      "picture": "avatar-default.png",
+      "id": 2
+    },
+    {
+      "name": "Minta J\u00e1nos",
+      "role": "Internal",
+      "picture": "avatar-default.png",
+      "id": 3
+    },
+    {
+      "name": "Minta Kata",
+      "role": "External",
+      "picture": "avatar-default.png",
+      "id": 4
+    },
+    {
+      "name": "Jin-Soo Kwon",
+      "role": "Internal",
+      "picture": "avatar-default.png",
+      "id": 5
+    },
+    {
+      "name": "Sun-Hwa Kwon",
+      "role": "Internal",
+      "picture": "avatar-default.png",
+      "id": 6
+    },
+    {
+      "name": "Desmond Hume",
+      "role": "Admin",
+      "picture": "avatar-default.png",
+      "id": 7
+    },
+    {
+      "name": "Duncan Idaho",
+      "role": "External",
+      "picture": "avatar-default.png",
+      "id": 8
+    },
+    {
+      "name": "Georgia Lass",
+      "role": "External",
+      "picture": "avatar-default.png",
+      "id": 9
+    },
+    {
+      "name": "Betty Rhomer",
+      "role": "Internal",
+      "picture": "avatar-default.png",
+      "id": 10
+    }
+  ]
+}
